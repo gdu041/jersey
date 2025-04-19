@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  padding: 0 200px;
+  display: flex;
+  justify-content: center;
+  .card_group {
+    width: 1020px;
+    display: flex;
+  }
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+  background-image: url('/img/CardBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  :hover {
+    transform: scale(1.02);
+  }
+  :active {
+    transform: scale(1);
+  }
+
+  & > svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
